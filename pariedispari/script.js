@@ -10,5 +10,8 @@ function isEven(number) {
 
 // Funzione principale per il gioco pari e dispari
 function playEvenOdd() {
-    const userChoice = document.getElementById('choice').value; // Recuperiamo input utente
+    // Recuperiamo input utente
+    const userChoice = document.getElementById('choice').value;
+    const userNumber = parseInt(document.getElementById('numberInput').value);
+    
 }
