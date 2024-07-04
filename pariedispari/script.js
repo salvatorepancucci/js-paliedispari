@@ -13,7 +13,11 @@ function playEvenOdd() {
     // Recuperiamo input utente
     const userChoice = document.getElementById('choice').value;
     const userNumber = parseInt(document.getElementById('numberInput').value);
-    const computerNumber = getRandomNumber(); // Assegniamo numbero random al computer tramite la prima funzione
+    const computerNumber = getRandomNumber(); // Assegniamo numero random al computer tramite la prima funzione
     const sum = userNumber + computerNumber; // Variabile di somma
     const result = isEven(sum) ? 'pari' : 'dispari'; // Variabile di risultato usando la seconda funzione. ? Operatore ternario applicato che funge da condizione if-else; trovato nella documentazione :)))
+    // Restituiamo il risultato all'utente
+    let resultMessage = `Il tuo numero: ${userNumber}, Numero del computer: ${computerNumber}, Somma: ${sum}, Somma è ${result}.`;
+    resultMessage += (result === userChoice) ? ' Hai vinto!' : ' Hai perso!';
+    document.getElementById('evenOddResult').innerText = resultMessage;
 }
