@@ -14,5 +14,5 @@ function playEvenOdd() {
     const userChoice = document.getElementById('choice').value;
     const userNumber = parseInt(document.getElementById('numberInput').value);
     const computerNumber = getRandomNumber(); // Assegniamo numbero random al computer tramite la prima funzione
-    
+    const sum = userNumber + computerNumber; // Variabile di somma
 }
