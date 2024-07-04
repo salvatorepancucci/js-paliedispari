@@ -8,3 +8,7 @@ function isEven(number) {
     return number % 2 === 0;
 }
 
+// Funzione principale per il gioco pari e dispari
+function playEvenOdd() {
+    
+}
